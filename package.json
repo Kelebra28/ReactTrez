@@ -2,6 +2,7 @@
   "name": "trez",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kelebra28.github.io/ReactTrez",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-brands-svg-icons": "^5.8.2",
@@ -17,6 +18,8 @@
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+   "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
